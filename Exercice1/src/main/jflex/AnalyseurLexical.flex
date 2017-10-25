@@ -30,14 +30,14 @@ mod 		= "mod"|"MOD"
 
 /* regles */
 
-"("			{ return new Symbol(sym.PAR_G) ;}
-")"			{ return new Symbol(sym.PAR_D) ;}
-"+"			{ return new Symbol(sym.PLUS) ;}
-"-"			{ return new Symbol(sym.MOINS) ;}
-"/"			{ return new Symbol(sym.DIV) ;}
-{mod}		{ return new Symbol(sym.MOD) ;}
-"*"			{ return new Symbol(sym.MUL) ;}
-";"			{ return new Symbol(sym.SEMI) ;}
-{chiffre}+	{ return new Symbol(sym.ENTIER, new Integer(yytext())) ;}
+"("			{ return new Symbol(sym.PAR_G, yyline, yycolumn) ;}
+")"			{ return new Symbol(sym.PAR_D, yyline, yycolumn) ;}
+"+"			{ return new Symbol(sym.PLUS, yyline, yycolumn) ;}
+"-"			{ return new Symbol(sym.MOINS, yyline, yycolumn) ;}
+"/"			{ return new Symbol(sym.DIV, yyline, yycolumn) ;}
+{mod}		{ return new Symbol(sym.MOD, yyline, yycolumn) ;}
+"*"			{ return new Symbol(sym.MUL, yyline, yycolumn) ;}
+";"			{ return new Symbol(sym.SEMI, yyline, yycolumn) ;}
+{chiffre}+	{ return new Symbol(sym.ENTIER, yyline, yycolumn, new Integer(yytext())) ;}
 {espace} 	{ /*espace : pas d'action*/ }
-.			{ return new Symbol(sym.ERROR) ;}
+.			{ return new Symbol(sym.ERROR, yyline, yycolumn) ;}
