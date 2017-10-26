@@ -1,0 +1,19 @@
+12 + 5; 		/* ceci est un commentaire */
+10 / 2 - 3;  99; 	/* le point-virgule separe les expressions à évaluer */
+/* l'évaluation donne toujours un nombre entier */
+((30 * 1) + 4) mod 5;	/* cinq opérateurs binaires */
+erreur + 5;		/* il peut avoir des erreurs */
+8 / 0 + 6;		/* après erreur, on peut continuer */
+3 + * 5;		/* encore erreur */
+3 * -4;			/* un opérateur opérateur unaire */
+5 +
+4; /* expression sur plus d'une ligne */
+
+let prixHt = 200; 	/* une variable prend valeur lors de sa déclaration */
+let prixTtc =  prixHt * 119 / 100;
+prixTtc + 100;
+14 / x;			/* erreur */
+5 # + 2;    /* attention il faut signaler erreur */
+10 * 3;     // reste ligne est commentaire
+5;
+ /**** fin ***/
