@@ -9,7 +9,7 @@ Différentes versions pour l'exercice 1 :
 [branche Exercice1_v1](../Exercice1_v1/Exercice1)
 - v2 : ajout des opérateurs pour le modulo et le moins unaire - gestion des erreurs (division par zéro) : 
 [branche Exercice1_v2](../Exercice1_v2/Exercice1)
-- v3 : ajout de la gestion des numéro de ligne et de colonne : 
+- v3 : ajout de la gestion des numéros de ligne et de colonne : 
 [branche Exercice1_v3](../Exercice1_v3/Exercice1)
     
 **Sous Dossier [Exercice2](Exercice2) :**  
@@ -20,7 +20,7 @@ Différentes versions  pour l'exercice 2 :
 [branche Exercice2_v1](../Exercice2_v1/Exercice2)
 - v2 : ajout des opérateurs pour le modulo et le moins unaire - gestion des erreurs (variable indéfinie/division par zéro): 
 [branche Exercice2_v2](../Exercice2_v2/Exercice2)
-- v3 : ajout de la gestion des numéro de ligne et de colonne : 
+- v3 : ajout de la gestion des numéros de ligne et de colonne : 
 [branche Exercice2_v3](../Exercice2_v3/Exercice2)
 
 Normalement l'exécution de la tâche build (via gradle) devrait générer un jar pour chaque exercice 
